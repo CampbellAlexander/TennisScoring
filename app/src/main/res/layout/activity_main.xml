@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_drawable">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            style="@style/vertical_column"
+            android:paddingRight="16dp">
+
+            <LinearLayout style="@style/score_box">
+
+                <TextView
+                    style="@style/score_title"
+                    android:text="@string/sets" />
+
+                <TextView
+                    android:id="@+id/player1_sets_won"
+                    style="@style/score_value"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/score_box">
+
+                <TextView
+                    style="@style/score_title"
+                    android:text="@string/games" />
+
+                <TextView
+                    android:id="@+id/player1_games_won"
+                    style="@style/score_value"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/score_box">
+
+                <TextView
+                    style="@style/score_title"
+                    android:text="@string/score" />
+
+                <TextView
+                    android:id="@+id/player1_game_score"
+                    style="@style/score_value"
+                    android:text="30" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/player1_let"
+                style="@style/button"
+                android:layout_marginTop="16dp"
+                android:onClick="player1Let"
+                android:text="@string/let" />
+
+            <Button
+                android:id="@+id/player1_miss_serve"
+                style="@style/button"
+                android:onClick="player1MissServe"
+                android:text="@string/miss_serve" />
+
+            <Button
+                android:id="@+id/player1_point"
+                style="@style/button"
+                android:onClick="player1Point"
+                android:text="@string/point" />
+
+        </LinearLayout>
+
+        <View style="@style/vertical_divider" />
+
+        <LinearLayout
+            style="@style/vertical_column"
+            android:paddingLeft="16dp">
+
+            <LinearLayout style="@style/score_box">
+
+                <TextView
+                    style="@style/score_title"
+                    android:text="@string/sets" />
+
+                <TextView
+                    android:id="@+id/player2_sets_won"
+                    style="@style/score_value"
+                    android:text="1" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/score_box">
+
+                <TextView
+                    style="@style/score_title"
+                    android:text="@string/games" />
+
+                <TextView
+                    android:id="@+id/player2_games_won"
+                    style="@style/score_value"
+                    android:text="1" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/score_box">
+
+                <TextView
+                    style="@style/score_title"
+                    android:text="@string/score" />
+
+                <TextView
+                    android:id="@+id/player2_game_score"
+                    style="@style/score_value"
+                    android:text="45" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/player2_let"
+                style="@style/button"
+                android:layout_marginTop="16dp"
+                android:onClick="player2Let"
+                android:text="@string/let" />
+
+            <Button
+                android:id="@+id/player2_miss_serve"
+                style="@style/button"
+                android:onClick="player2MissServe"
+                android:text="@string/miss_serve" />
+
+            <Button
+                android:id="@+id/player2_point"
+                style="@style/button"
+                android:onClick="player2Point"
+                android:text="@string/point" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            style="@style/resetButton"
+            android:text="@string/reset"
+            android:onClick="reset"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

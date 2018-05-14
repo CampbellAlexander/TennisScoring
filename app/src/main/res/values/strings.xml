@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TennisScoring</string>
+    <string name="reset">RESET</string>
+    <string name="point">Point</string>
+    <string name="miss_serve">Miss Serve</string>
+    <string name="let">Let</string>
+    <string name="sets">Sets</string>
+    <string name="games">Games</string>
+    <string name="score">Score</string>
+</resources>
